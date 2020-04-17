@@ -7,22 +7,24 @@ const {engines} = require('./package.json');
 
 /**
  * @typedef babelConfigApiType
- * @property {babelPresetDefaultApiCacheType} cache - Api cache.
+ * @property {babelConfigApiCacheType} cache - Api cache.
  */
 
 const targets = {
     node: engines.node.replace(/[^0-9.]/g, '')
 };
 
+const date = new Date();
+
 const codisticaLicense = `/**
  * @license Codistica
  *
- * Copyright (c) 2019, Codistica and its affiliates.
+ * Copyright (c) ${date.getFullYear()}, Codistica and its affiliates.
  *
- * This source code is licensed under the ISC license found in the
+ * This source code is licensed under the MIT license found in the
  * LICENSE.md file in the root directory of this source tree.
  *
- * BUILD DATE: ${new Date().toString()}
+ * BUILD DATE: ${date.toString()}
  */`;
 
 /**
