@@ -1,4 +1,4 @@
-import {declare} from '@babel/helper-plugin-utils/src';
+import {declare} from '@babel/helper-plugin-utils';
 import {getTestMethodUtility} from './modules/get-test-method-utility.js';
 import {babelPresetEnv} from './presets/babel-preset-env.js';
 import {babelPresetFlow} from './presets/babel-preset-flow.js';
